@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(formidable());
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   return res.json({
     restaurant: {
       path: "Le Pain Quotidien",
