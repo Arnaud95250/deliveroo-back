@@ -454,6 +454,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
-  console.log("Le serveur fonctionne correctement");
+app.listen(process.env.PORT || 3001, () => {
+  console.log("Server started on port " + process.env.PORT);
 });
